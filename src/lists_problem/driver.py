@@ -4,5 +4,4 @@ command=[]
 for i in range(n):
     x=input()
     command.append(x)
-lis=[]
-list_func(n, command, lis)
+list_func(n, command)
