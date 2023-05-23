@@ -1,0 +1,8 @@
+from src.lists_problem.utils import *
+n=int(input())
+command=[]
+for i in range(n):
+    x=input()
+    command.append(x)
+lis=[]
+list_func(n, command, lis)
