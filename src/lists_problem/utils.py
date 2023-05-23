@@ -1,4 +1,5 @@
-def list_func(n, command, lis):
+def list_func(n, command):
+    lis = []
     for i in range(n):
         split_cmd = command[i].split(" ")
         cmd = split_cmd[0]
@@ -6,7 +7,8 @@ def list_func(n, command, lis):
             lis.insert(int(split_cmd[1]), int(split_cmd[2]))
             # print(lis)
         elif cmd == "print":
-            print(lis)
+             print(lis)
+             return lis
         elif cmd == "remove":
             lis.remove(int(split_cmd[1]))
         elif cmd == "append":
